@@ -1,0 +1,143 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #3f7786;
+  color: #305b67;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  margin-right: 11px;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 8px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+#app-wrapper, #loading{
+  width: 1600px;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#app {
+
+  height: 100%;
+  width: 100%;
+
+  #loading {
+    text-align: center;
+  }
+
+  #search-bar {
+
+    float: right;
+    margin: 30px;
+
+    .input-group {
+      position: relative;
+    }
+
+    input[type="text"], button {
+      border:none;
+      background-image:none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-radius: 33px;
+      outline: none;
+    }
+
+    button {
+      position: absolute;
+      right: 4px;
+      top: 2px;
+      padding: 0 5px;
+      display: inline-flex;
+      align-items: center;
+      height: 19px;
+      background-color: #284148;
+      color: #bbbbbb;
+      cursor: pointer;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      padding: 6px 10px;
+      background-color: #305b67;
+      color: #bbbbbb;
+
+      &::-webkit-input-placeholder {
+        color: #868e90 !important;
+      }
+
+    }
+  }
+
+  #todays-forecast {
+    text-align: center;
+    margin-bottom: 10px;
+
+    .temp {
+      font-size: 25px;
+      line-height: 12px;
+      margin-top: 3px;
+    }
+
+    .current-stats {
+      font-family: 'Quicksand', sans-serif;
+      padding: 0;
+      margin: 20px auto;
+      display: inline-block;
+      list-style: none;
+      text-align: left;
+      li {
+        text-align: center;
+      }
+    }
+
+  }
+
+  #week-forecast-list {
+
+    display: table;
+    margin: auto;
+
+    .summary {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+
+    .weekday-forecast {
+      display: inline-block;
+      padding: 0 20px;
+
+      .temp {
+        text-align: center;
+        font-size: 13px;
+        color: #b1b1b1;
+      }
+
+    }
+  }
+
+  .weather-icon {
+    text-align: center;
+  }
+
+}

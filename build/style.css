@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #3f7786;
+  color: #305b67;
+  font-family: 'Pacifico', cursive;
+  font-size: 100%; }
+
+h1 {
+  margin: 0; }
+
+#app {
+  width: 1000px;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  #app #todays-forecast {
+    text-align: center; }
+    #app #todays-forecast .temp {
+      font-size: 25px;
+      font-family: 'Quicksand', sans-serif;
+      line-height: 12px; }
+    #app #todays-forecast .current-stats {
+      font-family: 'Quicksand', sans-serif;
+      padding: 0;
+      margin: 20px auto;
+      display: inline-block;
+      list-style: none;
+      text-align: left; }
+      #app #todays-forecast .current-stats li {
+        text-align: center; }
