@@ -11,7 +11,8 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.props.getWeather();
+    if(localStorage.getItem("location") != null)
+      this.props.getWeather();
   }
 
   componentDidMount() {
@@ -19,8 +20,13 @@ class App extends Component {
   }
 
   render() {
+    
+    if(localStorage.getItem("location") == null)
+      return <SearchBar />
+
     if(this.props.weather.data == undefined)
       return <h1 id="loading">Loading...</h1>
+
     return (
       <div>
           <SearchBar />
