@@ -3,7 +3,7 @@
 
   "name": "Weather Notify",
   "description": "This extension shows the current weather using the Dark Sky API.",
-  "version": "1.0",
+  "version": "0.6",
 
   "permissions": [
     "activeTab"

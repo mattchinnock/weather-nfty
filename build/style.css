@@ -71,7 +71,7 @@ h2 {
     #app #todays-forecast .temp {
       font-size: 25px;
       line-height: 12px;
-      margin-top: 3px; }
+      margin-top: 8px; }
     #app #todays-forecast .current-stats {
       font-family: 'Quicksand', sans-serif;
       padding: 0;
