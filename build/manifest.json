@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Weather Notify",
-  "description": "This extension allows the user to change the background color of the current page.",
+  "description": "This extension shows the current weather using the Dark Sky API.",
   "version": "1.0",
 
   "permissions": [
@@ -10,5 +10,6 @@
   ],
   "chrome_url_overrides" : {
     "newtab": "index.html"
-  }
+  },
+  "content_security_policy": "script-src 'self' https://maps.googleapis.com https://use.fontawesome.com; object-src 'self' "
 }
