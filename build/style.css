@@ -6,25 +6,72 @@ html, body {
 body {
   background-color: #3f7786;
   color: #305b67;
-  font-family: 'Pacifico', cursive;
-  font-size: 100%; }
+  font-family: 'Quicksand', sans-serif;
+  font-size: 125%; }
 
 h1 {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  margin-right: 11px; }
 
-#app {
-  width: 1000px;
+h2 {
+  margin: 0 0 20px 0;
+  font-size: 8px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #bbbbbb; }
+
+#app-wrapper, #loading {
+  width: 1600px;
   margin: auto;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  #app #todays-forecast {
+
+#app {
+  height: 100%;
+  width: 100%; }
+  #app #loading {
     text-align: center; }
+  #app #search-bar {
+    float: right;
+    margin: 30px; }
+    #app #search-bar .input-group {
+      position: relative; }
+    #app #search-bar input[type="text"], #app #search-bar button {
+      border: none;
+      background-image: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      border-radius: 33px;
+      outline: none; }
+    #app #search-bar button {
+      position: absolute;
+      right: 4px;
+      top: 6px;
+      padding: 0 5px;
+      display: inline-flex;
+      align-items: center;
+      height: 19px;
+      background-color: #284148;
+      color: #bbbbbb;
+      cursor: pointer; }
+    #app #search-bar input[type="text"] {
+      width: 200px;
+      padding: 6px 15px;
+      background-color: #305b67;
+      color: #bbbbbb; }
+      #app #search-bar input[type="text"]::-webkit-input-placeholder {
+        color: #2d2a2a !important; }
+  #app #todays-forecast {
+    text-align: center;
+    margin-bottom: 10px; }
     #app #todays-forecast .temp {
       font-size: 25px;
-      font-family: 'Quicksand', sans-serif;
-      line-height: 12px; }
+      line-height: 12px;
+      margin-top: 3px; }
     #app #todays-forecast .current-stats {
       font-family: 'Quicksand', sans-serif;
       padding: 0;
@@ -34,3 +81,23 @@ h1 {
       text-align: left; }
       #app #todays-forecast .current-stats li {
         text-align: center; }
+  #app #week-forecast-list {
+    display: table;
+    margin: auto; }
+    #app #week-forecast-list .summary {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 30px; }
+    #app #week-forecast-list .weekday-forecast {
+      display: inline-block;
+      padding: 0 20px; }
+      #app #week-forecast-list .weekday-forecast .temp {
+        text-align: center;
+        font-size: 13px;
+        color: #b1b1b1; }
+    #app #week-forecast-list .mini-icon {
+      height: 64px;
+      width: 64px;
+      fill: #305b67; }
+  #app .weather-icon {
+    text-align: center; }
